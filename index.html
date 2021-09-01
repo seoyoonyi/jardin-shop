@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쟈뎅공식쇼핑몰</title>
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -29,12 +29,12 @@
             <div class="hd-top-logo">
                 <div class="container">
                     <h1 class="logo">
-                        <img src="image/logo.png" alt="쟈뎅 로고">
+                        <a href="#"><img src="image/logo.png" alt="쟈뎅 로고"></a>
                     </h1>
 
-                    <form class="search-box" action="#">
-                        <input type="search">
-                        <input type="submit" class="search-btn">
+                    <form class="search-wrap" action="#">
+                        <input class="search-box" type="search">
+                        <button class="search-btn"></button>
                     </form>
 
                     <ul class="user-page">
@@ -56,7 +56,14 @@
             </div>
             <nav class="hd-top-gnb">
                 <div class="container">
-                    <a class="all-category-btn" href="#"><span class="category-icon"> 전체카테고리</span></a>
+                    <a class="all-category-btn" href="#">
+                        <span class="category-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span>전체카테고리</span>
+                    </a>
 
                     <ul class="gnb">
                         <li><a href="#">신제품</a></li>
@@ -126,8 +133,8 @@
         </header>
         <!-- main -->
         <main>
-            <div class="slide-wrap">
-                <ul class="slide-view">
+            <div class="slide-view">
+                <ul class="slide-wrap">
                     <li>
                         <a href="#">
                             <img src="image/main_image01.png"
@@ -153,22 +160,22 @@
                         </a>
                     </li>
                 </ul>
-            </div>
 
-            <div class="slide-direction">
-                <a class="btn-prev" href="#"><img src="image/main_prev.png" alt="이전버튼"></a>
-                <a class="btn-next" href="#"><img src="image/main_next.png" alt="다음버튼"></a>
-            </div>
-
-            <div class="slide-ctrl">
-                <div class="pager">
-                    <span class="on">블릿</span>
-                    <span>블릿</span>
-                    <span>블릿</span>
+                <div class="slide-direction">
+                    <a class="btn-prev" href="#"><img src="image/main_prev.png" alt="이전버튼"></a>
+                    <a class="btn-next" href="#"><img src="image/main_next.png" alt="다음버튼"></a>
                 </div>
-                <a class="pause-btn" href="#">
-                    <img src="image/main_pause.png" alt="정지">
-                </a>
+    
+                <div class="slide-ctrl">
+                    <div class="pager">
+                        <a class="on" href="#"><span>블릿</span></a>
+                        <a href="#"><span>블릿</span></a>
+                        <a href="#"><span>블릿</span></a>
+                    </div>
+                    <a class="pause-btn" href="#">
+                        <img src="image/main_pause.png" alt="정지">
+                    </a>
+                </div>
             </div>
         </main>
         <!-- section01.베스트상품 -->

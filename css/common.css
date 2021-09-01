@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/*==================================================
+    CSS 초기화
+==================================================*/
+/* Eric Meyer’s “Reset CSS” 2.0 | 20110126 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline; } 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block; } 
+body {line-height: 1; } 
+ol, ul {list-style: none; } 
+blockquote, q {quotes: none; } 
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none; } 
+table {border-collapse: collapse;border-spacing: 0; } 
+/* 추가 Reset CSS */
+* {font-family: 'Noto Sans KR', sans-serif; color: #222;}
+a {text-decoration: none; display: block;}
+img {display: block;}
+
+
+/*==================================================
+    공통디자인
+==================================================*/
+.container {max-width:1200px; margin: 0 auto;}
+
+
+
+
+
+/*==================================================
+    헤더
+==================================================*/
+header .hd-top {width:100%; height: 40px; border-bottom: 1px solid #ccc; background-color: #fafafa;}
+header .hd-top .container {height: 100%; display: flex; align-items: center;}
+header .hd-top .favorites-btn {font-size: 0.875rem; padding-right: 3em; background: url(../image/top_favorite.png) no-repeat 3.8em;}
+header .hd-top .util-menu {display: flex; margin-left: auto;}
+header .hd-top .util-menu li {margin-left: 1.8em; position: relative;}
+header .hd-top .util-menu li:before {content:'|'; color: #bdbdbd; position: absolute; top: 0; left: -1em;}
+header .hd-top .util-menu li:first-child:before {content:'';}
+header .hd-top .util-menu li a {font-size: 0.875rem;}
+
+/* top logo 부분 */
+header .hd-top-logo {width: 100%; height: 100px; border-bottom: 1px solid #ccc; }
+header .hd-top-logo .container {height: 100%; display: flex; align-items: center;}
+header .hd-top-logo .logo {width: 12.5em; margin-right: 1em;}
+header .hd-top-logo .logo img{height: 100%;}
+header .hd-top-logo .search-wrap {width: 300px; border-bottom: 2px solid #222; padding-bottom: 0.4em; display: flex;}
+header .hd-top-logo .search-wrap .search-box {border: 0; flex:1; min-width: 0;}
+header .hd-top-logo .search-wrap .search-box:focus {outline: none;}
+header .hd-top-logo .search-wrap .search-btn {border: 0; width: 30px; height: 30px; background: url(../image/top_search.png) no-repeat center; cursor:pointer;}
+header .hd-top-logo .user-page {display: flex; margin-left: auto;}
+header .hd-top-logo .user-page li {margin-left: 1.2em; position: relative;}
+header .hd-top-logo .user-page li img {height: 70%; margin: 0 auto;}
+header .hd-top-logo .user-page li .basket-circle {width: 20px; height: 20px; display: block; background-color: #ea5504; border-radius: 50%; color: #fff; font-size: 0.875rem; text-align: center; line-height: 20px; position: absolute; top: -7px; right: 0;}
+header .hd-top-logo .user-page li .user-page-txt {display: block; color: #555; font-size:0.875rem; margin-top: 1em;}
+
+/* top gnb부분 */
+header .hd-top-gnb {width: 100%; height: 60px; border-bottom: 1px solid #ccc;}
+header .hd-top-gnb a {font-size: 1.1rem; font-weight: 600;}
+header .hd-top-gnb a:not(.all-category-btn):hover {color: #ea5504;}
+header .hd-top-gnb .container {height: 100%; display: flex; align-items: center;}
+header .hd-top-gnb .all-category-btn {height: 100%; width: 15%; line-height: 60px; text-align: center; border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+header .hd-top-gnb .all-category-btn .category-icon {display: inline-block; width: 25px; margin-right: 0.5em;}
+header .hd-top-gnb .all-category-btn .category-icon span {display: block; width: 25px; height: 3px; margin-bottom: 4px; background-color: #222;}
+header .hd-top-gnb .all-category-btn>span {display: inline-block; vertical-align: middle;}
+header .hd-top-gnb .gnb {width: 50%; margin-right: 15%; display: flex;}
+header .hd-top-gnb .gnb li {width: 16.66666%; text-align: center;}
+header .hd-top-gnb .etc-list {width: 20%; display: flex; justify-content: flex-end; margin-left: auto;}
+header .hd-top-gnb .etc-list li {width: 50%; text-align: right;}
+
+/* 전체 카테고리 메뉴 */
+header .all-category-wrap {width: 1200px; margin: 0 auto; padding: 3em; border: 1px solid #555; background-color: #fff; box-sizing: border-box; position: relative; display: none;}
+header .all-category-wrap .all-category-menu {display: flex;}
+header .all-category-wrap .all-category-menu>li {width: 17%; margin-right: 3%; text-indent: 0.3em;}
+header .all-category-wrap .all-category-menu>li>a {font-size: 1.1rem; font-weight: 600;}
+header .all-category-wrap .all-category-menu>li>a:after {content: ''; display: block; width: 100%; border-bottom: 1px solid #555; margin: 1em 0 1.2em;}
+header .all-category-wrap .all-category-menu .smenu li {margin-bottom: 1em;}
+header .all-category-wrap .close-btn {position: absolute; bottom: 1em; right: 1em;}
+header .all-category-wrap .close-btn img {width: 100%;}
+
+
+
+/*==================================================
+    메인
+==================================================*/
+main {width: 100%;}
+/* 슬라이드 갤러리 */
+main .slide-view {width: 100%; height: auto; position: relative; overflow: hidden; background: tomato;}
+main .slide-view .slide-wrap {width: 400%; height: 100%; display: flex; flex-shrink: 0; position: relative;}
+main .slide-view .slide-wrap li {width: 25%;}
+main .slide-view .slide-wrap li a img {width: 100%; object-position: center; object-fit: cover;}
+main .slide-view .slide-wrap li:nth-child(1),main .slide-view .slide-wrap li:nth-child(2) {display: none;}
+/* 슬라이드 방향키 */
+main .slide-view .slide-direction {width: 1280px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+main .slide-view .slide-direction a {position: absolute; top: 50%;}
+main .slide-view .slide-direction .btn-prev {left: 0;}
+main .slide-view .slide-direction .btn-next {right: 0;}
+main .slide-view .slide-direction a img {width: 100%;}
+/* 슬라이드 컨트롤 */
+main .slide-view .slide-ctrl {display: flex; margin-right: 2em; position: absolute; bottom: 16px; left:50%; transform: translateX(-50%);}
+main .slide-view .slide-ctrl .pager {display: flex;}
+main .slide-view .slide-ctrl .pager>a {width: 16px; height: 16px; background-color: #ccc; border-radius: 50%; margin-top: 0.4em; margin-right: 0.5em; overflow: hidden;}
+main .slide-view .slide-ctrl .pager>a.on {}
+main .slide-view .slide-ctrl .pager>a>span {width: 1px; height: 1px; position: relative; top:-50px; left: 0px;}
+main .slide-view .slide-ctrl .pause-btn {width: 30px; height: 30px;}
+main .slide-view .slide-ctrl .pause-btn img {width: 100%;}
+
+
+
+/*==================================================
+    section01.베스트상품
+==================================================*/
+.best-prod {margin-top: 100px; background-color: red;}
+.best-prod .container {}
+.best-prod .tit {font-size: 2.2rem; font-weight: 600;}
+
+
+
+
+
