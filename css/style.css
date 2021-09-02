@@ -6,7 +6,6 @@
  메인 - index.html 
 ==================================================*/
 
-
 /*==================================================
  메인 슬라이드
 ==================================================*/
@@ -32,14 +31,12 @@ main .slide-view .slide-ctrl .pause-btn { width: 30px; height: 30px; }
 main .slide-view .slide-ctrl .pause-btn img { width: 100%; } 
 
 
-
 /*==================================================
  section01.베스트상품
 ==================================================*/
 .best-prod { margin-top: 70px; } 
 .best-prod .tit { display: flex; } 
 .best-prod .more { margin-left: auto; margin-top: 1em; font-size: 1rem; padding-right: 1em; background: url(../image/main_more.png) no-repeat right top; } 
-
 /* 베스트상품목록 */
 .best-prod .best-prod-wrap { display: flex; justify-content: space-between; } 
 .best-prod .best-prod-wrap .best-prod-box { width: 30%; } 
@@ -47,8 +44,6 @@ main .slide-view .slide-ctrl .pause-btn img { width: 100%; }
 .best-prod .best-prod-wrap .best-prod-box .thumb .image img { margin: 0 auto; transition: all .5s; } 
 .best-prod .best-prod-wrap .best-prod-box .thumb:hover { border: 1px solid #ea5504; } 
 .best-prod .best-prod-wrap .best-prod-box .thumb:hover .image img { transform: scale(1.2); } 
-
-
 
 
 /*==================================================
@@ -70,7 +65,6 @@ main .slide-view .slide-ctrl .pause-btn img { width: 100%; }
 .recommend .recommend-wrap .recommend-box .recommend-item .desc .cart-btn { margin-top: 0.7em; } 
 
 
-
 /*==================================================
  section03.신제품 
 ==================================================*/
@@ -82,12 +76,10 @@ main .slide-view .slide-ctrl .pause-btn img { width: 100%; }
 .new-prod a img { width: 100%; } 
 
 
-
 /*==================================================
  section04.카테고리
 ==================================================*/
 .category .category-container { width: 1200px; } 
-
 /* 카테고리 탭메뉴 */
 .category .category-container .tab-menu { height: 50px; display: flex; margin: 2em 0; } 
 .category .category-container .tab-menu li { width: 25%; height: 100%; border: 1px solid #ccc; border-right: 0; border-bottom: 1px solid #ea5504; background-color: #eee; text-align: center; line-height: 50px; } 
@@ -95,12 +87,10 @@ main .slide-view .slide-ctrl .pause-btn img { width: 100%; }
 .category .category-container .tab-menu li a { color: #777; } 
 .category .category-container .tab-menu li.on { border: 1px solid #ea5504; border-bottom: 0; background-color: #fff; } 
 .category .category-container .tab-menu li.on a { color: #222 } 
-
 /* 카테고리박스 디자인 */
 .category-box { display: flex; flex-wrap: wrap; justify-content: space-between; } 
 .category-box .category-item { width: 23%; margin-bottom: 3em; } 
 .category-box .category-item .thumb .image img { width: 100%; } 
-
 
 
 /*==================================================
@@ -109,12 +99,12 @@ section05.이벤트와 리뷰
 .event-review { margin-top: 70px; padding: 70px 0; background-color: #eee; } 
 .event-review .tit {text-align: left; font-size: 1.8rem;}
 .event-review .container {display: flex;}
+/* 이벤트 */
 .event-review .event {width: 45%; margin-right: 3%;}
 .event-review .event a {width: 100%; border-radius: 20px; overflow: hidden;}
 .event-review .event a img {width: 100%;}
-
+/* 리뷰 */
 .event-review .review {width: 52%;}
-.event-review .review .tit {}
 .event-review .review .review-wrap {border-top: 2px solid #222; padding-top: 1em;}
 .event-review .review .review-wrap .review-box {margin-bottom: 1em;}
 .event-review .review .review-wrap .review-box a {display: flex;}
@@ -123,15 +113,9 @@ section05.이벤트와 리뷰
 .event-review .review .review-wrap .review-box .content {width: 20vw;}
 .event-review .review .review-wrap .review-box .content .title {font-weight: 600; margin-bottom: 0.4em;}
 .event-review .review .review-wrap .review-box .content .txt {width: 100%; font-size: 0.9rem; margin-bottom: 1em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-.event-review .review .review-wrap .review-box .content .star {}
 .event-review .review .review-wrap .review-box .writer {margin-left: auto; font-size: 0.9rem; color: #555;}
 
 
-
-/*==================================================
-aside.퀵메뉴
-==================================================*/
-.quick-menu {display: none;}
 
 
 

@@ -50,14 +50,11 @@ img { display: block; }
 /* 제품가격 디자인 */
 .desc .prod-title { margin-bottom: 0.5em; } 
 .desc .price-area { display: flex; } 
-.desc .price-area .price { display: block; margin-bottom: 0.5em; text-decoration: line-through; font-family: 'Roboto', sans-serif; order: 1; margin-top: 0.7em; margin-left: 0.5em; color: #777; } 
+.desc .price-area .price { display: block; margin-bottom: 0.5em; text-decoration: line-through; font-family: 'Roboto', sans-serif; margin-top: 0.7em; margin-left: 0.5em; color: #777; } 
 .desc .price-area .price .won { font-size: 0.8rem; color: #777; } 
 .desc .price-area .discount { display: block; font-size: 1.8rem; font-weight: 600; letter-spacing: -0.02rem; font-family: 'Roboto', sans-serif; } 
 .desc .price-area .discount .won { font-size: 1.2rem; font-weight: 600; margin-left: 0.1em; } 
 .desc .price-area .sale { display: block; font-size: 1.7rem; font-weight: 600; color:#ea5504; font-family: 'Roboto', sans-serif; margin-top: 0.09em; margin-right: 0.1em; } 
-
-
-
 
 
 /*==================================================
@@ -71,7 +68,6 @@ header .hd-top .util-menu li { margin-left: 1.8em; position: relative; }
 header .hd-top .util-menu li:before { content:'|'; color: #bdbdbd; position: absolute; top: 0; left: -1em; } 
 header .hd-top .util-menu li:first-child:before { content:''; } 
 header .hd-top .util-menu li a { font-size: 0.875rem; } 
-
 /* top logo 부분 */
 header .hd-top-logo { width: 100%; height: 100px; border-bottom: 1px solid #ccc; } 
 header .hd-top-logo .container { height: 100%; display: flex; align-items: center; } 
@@ -86,7 +82,6 @@ header .hd-top-logo .user-page li { margin-left: 1.2em; position: relative; }
 header .hd-top-logo .user-page li img { height: 70%; margin: 0 auto; } 
 header .hd-top-logo .user-page li .basket-circle { width: 20px; height: 20px; display: block; background-color: #ea5504; border-radius: 50%; color: #fff; font-size: 0.875rem; text-align: center; line-height: 20px; position: absolute; top: -7px; right: 0; } 
 header .hd-top-logo .user-page li .user-page-txt { display: block; color: #555; font-size:0.875rem; margin-top: 1em; } 
-
 /* top gnb부분 */
 header .hd-top-gnb { width: 100%; height: 60px; border-bottom: 1px solid #ccc; } 
 header .hd-top-gnb a { font-size: 1.1rem; font-weight: 600; } 
@@ -100,7 +95,6 @@ header .hd-top-gnb .gnb { width: 50%; margin-right: 15%; display: flex; }
 header .hd-top-gnb .gnb li { width: 16.66666%; text-align: center; } 
 header .hd-top-gnb .etc-list { width: 20%; display: flex; justify-content: flex-end; margin-left: auto; } 
 header .hd-top-gnb .etc-list li { width: 50%; text-align: right; } 
-
 /* 전체 카테고리 메뉴 */
 header .all-category-wrap { width: 1200px; margin: 0 auto; padding: 3em; border: 1px solid #555; background-color: #fff; box-sizing: border-box; position: relative; display: none; } 
 header .all-category-wrap .all-category-menu { display: flex; } 
@@ -112,10 +106,10 @@ header .all-category-wrap .close-btn { position: absolute; bottom: 1em; right: 1
 header .all-category-wrap .close-btn img { width: 100%; } 
 
 
-
 /*==================================================
 풋터
 ==================================================*/
+/* 풋터 사이트맵 */
 footer .site-map {width: 100%; border-bottom: 1px solid #ccc;}
 footer .site-map .container {height: 60px; display: flex; align-items: center;}
 footer .site-map .container li { margin-right: 1.8em; position: relative;} 
@@ -123,19 +117,13 @@ footer .site-map .container li:after { content:'|'; color: #bdbdbd; position: ab
 footer .site-map .container li:last-child:after { content:''; } 
 footer .site-map .container li a { font-size: 0.9rem; }
 footer .site-map .container li:first-child a {font-weight: 800;}
-
-
+/* 풋터 top부분 */
 footer .ft-top {width: 100%; padding: 1.5em 0; border-bottom: 1px solid #ccc;}
-footer .ft-top .tit {text-align: left; font-size: 1.5rem; font-family: 'Roboto', sans-serif; font-weight: 600; color: #555;}
-footer .ft-top .bold-txt {display: block; font-size: 2rem; font-weight: 600; margin-bottom: 0.4em;}
+footer .ft-top .tit {text-align: left; font-size: 1.2rem; font-family: 'Roboto', sans-serif; font-weight: 600; color: #555;}
+footer .ft-top .bold-txt {display: block; font-size: 1.6rem; font-weight: 600; margin-bottom: 0.4em;}
 footer .ft-top .small-txt {display: block; line-height: 1.4;}
-
-
-
 footer .ft-top .container {display: flex;}
 footer .ft-top .container>div {width: 23.5%; padding: 1em 1em 1em 0; margin-right: 2%; padding-right: 2%; border-right: 1px solid #ccc; box-sizing: border-box;}
-footer .ft-top .container .cs {}
-footer .ft-top .container .company-site {}
 footer .ft-top .container .notice {border-right: 0;}
 footer .ft-top .container .notice li {line-height: 1.5;}
 footer .ft-top .container .notice li a {font-size: 0.875rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
@@ -143,10 +131,7 @@ footer .ft-top .container .notice li a::before {content: '•';}
 footer .ft-top .container .sns-group {margin-right: 0; border-right: 0; position: relative;}
 footer .ft-top .container .sns-group ul {display: flex; position: absolute; top: 0; right: 0;}
 footer .ft-top .container .sns-group li {margin-left: 1.5em;}
-
-
-
-
+/* 풋터 bottom부분 */
 footer .ft-bottom {width: 100%; padding: 1.5em 0 2em;}
 footer .ft-bottom .container {display: flex;}
 footer .ft-bottom .ft-logo {width: 15%; margin-right: 5%;}
@@ -156,3 +141,24 @@ footer .ft-bottom .info-box address p {display: inline; font-size: 0.875rem; mar
 footer .ft-bottom .info-box address p a {display: inline;}
 footer .ft-bottom .info-box address .bold-txt {font-weight: 600; margin-right: 0.5em;}
 footer .ft-bottom .info-box .copyright {font-size: 0.875rem;}
+
+
+/*==================================================
+aside.퀵메뉴
+==================================================*/
+.quick-menu {width: 100px;  border: 1px solid #ccc; background-color: #fff; position: absolute; right: 80px; top: 80%; }
+.quick-menu .tit {font-size: 1rem; margin-bottom: 0em; color: #777; padding: 1em 0 0.8em;}
+.quick-menu>div {border-bottom: 1px solid #ccc;}
+.quick-menu .recent-product .gonow-btn {margin-bottom: 1em; text-align: center; color: #ea5504; text-decoration: underline; font-size: 0.9rem;}
+.quick-menu .recent-product .recent-wrap .recent-view .recent-box {width: 80px; height: 80px; margin: 0 auto 0.5em; border: 1px solid #e1e1e1; overflow: hidden;}
+.quick-menu .recent-product .recent-wrap .recent-view .recent-box a img {width: 100%;}
+.quick-menu .recent-direction {display: flex; justify-content: center; margin: 1em;}
+.quick-menu .top-btn {border-bottom: 0;}
+.quick-menu .top-btn a {width: 100%; height: 100%;}
+.quick-menu .top-btn a img {margin: 1em auto;}
+
+/*==================================================
+반응형
+==================================================*/
+@media (max-width: 1024px) {}
+@media (max-width: 768px) {}
