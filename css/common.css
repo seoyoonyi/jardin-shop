@@ -162,7 +162,10 @@ aside.퀵메뉴
 @media screen and (max-width: 1500px){
  .quick-menu { display: none; } 
  }
-@media screen and (max-width: 1024px) { /*헤더 */
+@media screen and (max-width: 1024px) {
+    
+
+ /*헤더 */
 header .hd-top { display: none; } 
 header .hd-top-logo .search-wrap { display: none; } 
 header .hd-top-logo .user-page { display: none; } 
@@ -272,22 +275,12 @@ header .hd-top-gnb .gnb li a {font-size: 1rem;}
 
 
  /* 쟈뎅추천상품 */
-
  .recommend .recommend-wrap .recommend-box .recommend-item {justify-content: center;}
  .recommend .recommend-wrap .recommend-box .recommend-item .desc { display: block; } 
  .recommend .recommend-wrap .recommend-box .recommend-item .desc .cart-btn { margin-top: 1em; } 
  .recommend .recommend-wrap { width: 100%; border-radius: 0; margin-left: 0; } 
  .recommend .recommend-wrap .recommend-box .recommend-item { padding: 2em 1em; } 
  .recommend .recommend-wrap .recommend-box .recommend-item .thumb { width: 100px; height: 100px; margin-right: 1em; } 
-
-
-
-
-
-
-
-
-
 
  /* 카테고리 박스 */
  .category .category-container .mob-tab-menu {width: 100%; display: flex; flex-wrap: wrap; margin-bottom: 2em;}
@@ -303,23 +296,9 @@ header .hd-top-gnb .gnb li a {font-size: 1rem;}
  .category-box .category-item:nth-child(4)~.category-item { display: none; } 
  .category-box .category-item { width: 49%; margin-right: 2%; } 
  .category-box .category-item:nth-child(2n) { margin-right: 0; } 
-
-
-
-
  .category-box .category-item .desc .price-area .discount { order:0; margin-right: 0.2em;} 
 
-
-
-
-
-
-
-
-
-
  /* 이벤트 리뷰 */
-
  .event-review .event { width: 100%; margin-right: 0; } 
  .event-review .event .tit { display: none; } 
  .event-review .event a { width: 100%; height: auto; background-color: #f79800; } 
@@ -347,8 +326,6 @@ footer .ft-top .small-txt { font-size: 0.875rem; word-break: keep-all; }
  footer .ft-bottom .ft-logo { width: 50%; } 
  footer .ft-bottom .info-box address p { font-size: 0.7rem; } 
  footer .ft-bottom .info-box .copyright { font-size: 0.7rem; } 
-
-
 
 
 }
