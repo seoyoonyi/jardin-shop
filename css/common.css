@@ -100,7 +100,7 @@ header .all-category-wrap .all-category-menu>li>a:after { content: ''; display: 
 header .all-category-wrap .all-category-menu .smenu li { margin-bottom: 1em; } 
 header .all-category-wrap .close-btn { position: absolute; bottom: 1em; right: 1em; } 
 header .all-category-wrap .close-btn img { width: 100%; } 
-
+header .mob-hd-top-logo {display: none;}
 
 /*==================================================
 풋터
@@ -176,6 +176,7 @@ aside.퀵메뉴
 header .hd-top { display: none; } 
 header .hd-top-logo { display: none; } 
 /* 모바일 메뉴 추가 */
+header .mob-hd-top-logo {display: block;}
 header .mob-hd-top-logo { padding: 1em 0; border-bottom: 1px solid #ccc; } 
 header .mob-hd-top-logo .container { width: 90%; display: flex; align-items: center; justify-content: space-between; } 
 header .mob-hd-top-logo .menu-icon { display: inline-block; width: 25px; margin-right: 0.5em; } 
@@ -302,6 +303,8 @@ header .hd-top-gnb .gnb li a { font-size: 1rem; }
 .best-prod .best-prod-wrap .best-prod-box { width: 49%; } 
 .best-prod .best-prod-wrap .best-prod-box:last-child { display: none; } 
  /* 쟈뎅추천상품 */
+ .recommend .recommend-wrap .recommend-banner { display: none; } 
+ .recommend .recommend-wrap .mob-recommend-tit h2 {text-align: center; }
  .recommend .recommend-wrap .recommend-box .recommend-item { justify-content: center; } 
  .recommend .recommend-wrap .recommend-box .recommend-item .desc { display: block; } 
  .recommend .recommend-wrap .recommend-box .recommend-item .desc .cart-btn { margin-top: 1em; } 
