@@ -54,6 +54,25 @@
                     </ul>
                 </div>
             </div>
+            <!-- 모바일 header -->
+            <div class="mob-hd-top-logo">
+                <div class="container">
+                    <span class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+
+                    <h1 class="logo">
+                        <a href="#"><img src="image/logo.png" alt="쟈뎅 로고"></a>
+                    </h1>
+
+                    <a class="user-cart" href="#">
+                        <img src="image/top_cart.png" alt="장바구니">
+                    </a>
+
+                </div>
+            </div>
             <nav class="hd-top-gnb">
                 <div class="container">
                     <a class="all-category-btn" href="#">
@@ -131,8 +150,8 @@
                 <a class="close-btn" href="#"><img src="image/close_pop.png" alt="메뉴 닫기버튼"></a>
             </div>
         </header>
-        <!-- main -->
-        <main>
+        <!-- PC main 슬라이드 -->
+        <main class="pc-slide">
             <div class="slide-view">
                 <ul class="slide-wrap">
                     <li>
@@ -176,6 +195,38 @@
                         <img src="image/main_pause.png" alt="정지">
                     </a>
                 </div>
+            </div>
+        </main>
+        <!-- 모바일 main 슬라이드 -->
+        <main class="mob-slide">
+            <div class="slide-view">
+                <ul class="slide-wrap">
+                    <li>
+                        <a href="#">
+                            <img src="image/mob_slide_1.jpeg"
+                                alt="두둥등장! 새로워진 쟈뎅 시그니처 1.1L와 함께 떠나는 설렘 트래블! 총 3억원 상당의 경품 GET!">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="image/mob_slide_2.jpeg"
+                                alt="이벤트-8월 중 첫 로그인 시 리뉴얼 오픈 기념 3천원 쿠폰 증정! 2021.08.02 ~ 08.31">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="image/mob_slide_1.jpeg"
+                                alt="두둥등장! 새로워진 쟈뎅 시그니처 1.1L와 함께 떠나는 설렘 트래블! 총 3억원 상당의 경품 GET!">
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="slide-direction">
+                    <a class="btn-prev" href="#"><img src="image/mob_main_prev.png" alt="이전버튼"></a>
+                    <a class="btn-next" href="#"><img src="image/mob_main_next.png" alt="다음버튼"></a>
+                    <a class="pause-btn" href="#"><img src="image/main_pause.png" alt="정지"></a>
+                </div>
+
             </div>
         </main>
         <!-- section01.베스트상품 -->
@@ -255,9 +306,11 @@
             <div class="container">
                 <h2 class="tit">쟈뎅 추천 테마</h2>
                 <div class="recommend-wrap">
+                    <!-- PC배너 -->
                     <div class="recommend-banner">
                         <img src="image/main_prd_bn.jpg" alt="홈카페는 역시 딱! 편하게 2021.08.02 ~ 08.31">
                     </div>
+                    <!-- 모바일 배너 -->
                     <div class="mob-recommend-tit">
                         <h2><span class="small-txt">쟈뎅 추천 테마</span> <br>홈카페는 역시 딱! 편하게 <span class="day-txt">2021.08.02
                                 ~ 08.31</span></h2>
@@ -317,12 +370,14 @@
             <div class="new-bg">
                 <div class="container">
                     <h2 class="tit">신제품</h2>
+                    <!-- PC 배너 -->
                     <a class="pc-banner" href="#">
                         <img src="image/main_mid_bn.jpg"
                             alt="유명 연예인들도 즐겨먹는다는 콤부차 레몬 출시 기념 기획SET - 아워티 콤부차는 과일을 담아 트렌디하게 즐기는 건강음료입니다. #기본에 충실한 유기농 콤부차. #뷰티원료를 담은 이더뷰티 스틱. #상큼 달콤함이 가득 레몬 맛. 갓 짜낸 듯 상큼한 레몬의 맛을 살려 낸 레몬맛 콤부차를 올 여름 시원하게 즐겨보세요! - 21.08.02 ~ 08.31 - 자세히 보기">
                     </a>
                 </div>
             </div>
+            <!-- 모바일 배너 -->
             <a class="mob-banner" href="#">
                 <img src="image/mob-main_line_bn.jpeg"
                     alt="유명 연예인들도 즐겨먹는다는 콤부차 레몬 출시 기념 기획SET - 아워티 콤부차는 과일을 담아 트렌디하게 즐기는 건강음료입니다. #기본에 충실한 유기농 콤부차. #뷰티원료를 담은 이더뷰티 스틱. #상큼 달콤함이 가득 레몬 맛. 갓 짜낸 듯 상큼한 레몬의 맛을 살려 낸 레몬맛 콤부차를 올 여름 시원하게 즐겨보세요! - 21.08.02 ~ 08.31 - 자세히 보기">
@@ -333,6 +388,7 @@
             <div class="container">
                 <h2 class="tit">카테고리</h2>
                 <div class="category-container">
+                    <!-- 탭메뉴 -->
                     <ul class="tab-menu">
                         <li class="on"><a href="#">원두</a></li>
                         <li><a href="#">인스턴트 커피</a></li>
@@ -340,6 +396,7 @@
                         <li><a href="#">커피/티/음료</a></li>
                         <li><a href="#">용품</a></li>
                     </ul>
+                    <!-- 모바일 탭메뉴 -->
                     <ul class="mob-tab-menu">
                         <li class="on"><a href="#">원두</a></li>
                         <li><a href="#">인스턴트 커피</a></li>
@@ -841,6 +898,7 @@
                         <li><a href="#">이용안내</a></li>
                         <li><a href="#">고객센터</a></li>
                     </ul>
+                    <!-- 모바일 SNS 메뉴 -->
                     <ul class="mob-sns-group">
                         <li><a href="#"><img src="image/bt_sns01.png" alt="네이버 블로그"></a></li>
                         <li><a href="#"><img src="image/bt_sns02.png" alt="페이스북"></a></li>
@@ -870,6 +928,7 @@
                             <li><a href="#">[안내] 쟈뎅샵 포인트 오지급건 회수 안내</a></li>
                         </ul>
                     </div>
+                    <!-- pc sns메뉴 -->
                     <div class="sns-group">
                         <ul>
                             <li><a href="#"><img src="image/bt_sns01.png" alt="네이버 블로그"></a></li>
