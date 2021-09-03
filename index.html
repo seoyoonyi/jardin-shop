@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쟈뎅공식쇼핑몰</title>
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body>
@@ -66,7 +66,7 @@
                     </a>
 
                     <ul class="gnb">
-                        <li><a href="#">신제품</a></li>
+                        <li class="on"><a href="#">신제품</a></li>
                         <li><a href="#">기획전</a></li>
                         <li><a href="#">베스트</a></li>
                         <li><a href="#">선물세트</a></li>
@@ -258,6 +258,10 @@
                     <div class="recommend-banner">
                         <img src="image/main_prd_bn.jpg" alt="홈카페는 역시 딱! 편하게 2021.08.02 ~ 08.31">
                     </div>
+                    <div class="mob-recommend-tit">
+                        <h2><span class="small-txt">쟈뎅 추천 테마</span> <br>홈카페는 역시 딱! 편하게 <span class="day-txt">2021.08.02
+                                ~ 08.31</span></h2>
+                    </div>
                     <ul class="recommend-box">
                         <li class="recommend-item">
                             <a href="#">
@@ -313,10 +317,16 @@
             <div class="new-bg">
                 <div class="container">
                     <h2 class="tit">신제품</h2>
-                    <a href="#"><img src="image/main_mid_bn.jpg"
-                            alt="유명 연예인들도 즐겨먹는다는 콤부차 레몬 출시 기념 기획SET - 아워티 콤부차는 과일을 담아 트렌디하게 즐기는 건강음료입니다. #기본에 충실한 유기농 콤부차. #뷰티원료를 담은 이더뷰티 스틱. #상큼 달콤함이 가득 레몬 맛. 갓 짜낸 듯 상큼한 레몬의 맛을 살려 낸 레몬맛 콤부차를 올 여름 시원하게 즐겨보세요! - 21.08.02 ~ 08.31 - 자세히 보기"></a>
+                    <a class="pc-banner" href="#">
+                        <img src="image/main_mid_bn.jpg"
+                            alt="유명 연예인들도 즐겨먹는다는 콤부차 레몬 출시 기념 기획SET - 아워티 콤부차는 과일을 담아 트렌디하게 즐기는 건강음료입니다. #기본에 충실한 유기농 콤부차. #뷰티원료를 담은 이더뷰티 스틱. #상큼 달콤함이 가득 레몬 맛. 갓 짜낸 듯 상큼한 레몬의 맛을 살려 낸 레몬맛 콤부차를 올 여름 시원하게 즐겨보세요! - 21.08.02 ~ 08.31 - 자세히 보기">
+                    </a>
                 </div>
             </div>
+            <a class="mob-banner" href="#">
+                <img src="image/mob-main_line_bn.jpeg"
+                    alt="유명 연예인들도 즐겨먹는다는 콤부차 레몬 출시 기념 기획SET - 아워티 콤부차는 과일을 담아 트렌디하게 즐기는 건강음료입니다. #기본에 충실한 유기농 콤부차. #뷰티원료를 담은 이더뷰티 스틱. #상큼 달콤함이 가득 레몬 맛. 갓 짜낸 듯 상큼한 레몬의 맛을 살려 낸 레몬맛 콤부차를 올 여름 시원하게 즐겨보세요! - 21.08.02 ~ 08.31 - 자세히 보기">
+            </a>
         </section>
         <!-- section04.카테고리 -->
         <section class="category">
@@ -329,6 +339,12 @@
                         <li><a href="#">아워티</a></li>
                         <li><a href="#">커피/티/음료</a></li>
                         <li><a href="#">용품</a></li>
+                    </ul>
+                    <ul class="mob-tab-menu">
+                        <li class="on"><a href="#">원두</a></li>
+                        <li><a href="#">인스턴트 커피</a></li>
+                        <li><a href="#">아워티</a></li>
+                        <li><a href="#">커피/티/음료</a></li>
                     </ul>
                     <div class="category-wrap">
                         <div class="category-view">
@@ -817,13 +833,20 @@
         <!-- footer -->
         <footer>
             <div class="site-map">
-                <ul class="container">
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">이용안내</a></li>
-                    <li><a href="#">고객센터</a></li>
-                </ul>
+                <div class="container">
+                    <ul class="site-map-menu">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <ul class="mob-sns-group">
+                        <li><a href="#"><img src="image/bt_sns01.png" alt="네이버 블로그"></a></li>
+                        <li><a href="#"><img src="image/bt_sns02.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="image/bt_sns03.png" alt="인스타"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="ft-top">
                 <div class="container">

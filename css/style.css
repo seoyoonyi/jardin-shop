@@ -16,7 +16,7 @@ main .slide-view .slide-wrap li { width: 25%; }
 main .slide-view .slide-wrap li a img { width: 100%; object-position: center; object-fit: cover; } 
 main .slide-view .slide-wrap li:nth-child(1),main .slide-view .slide-wrap li:nth-child(2) { display: none; } 
 /* 슬라이드 방향키 */
-main .slide-view .slide-direction { width: 1280px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); } 
+main .slide-view .slide-direction {width: 1200px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); } 
 main .slide-view .slide-direction a { position: absolute; top: 50%; } 
 main .slide-view .slide-direction .btn-prev { left: 0; } 
 main .slide-view .slide-direction .btn-next { right: 0; } 
@@ -40,19 +40,26 @@ main .slide-view .slide-ctrl .pause-btn img { width: 100%; }
 /* 베스트상품목록 */
 .best-prod .best-prod-wrap { display: flex; justify-content: space-between; } 
 .best-prod .best-prod-wrap .best-prod-box { width: 30%; } 
-.best-prod .best-prod-wrap .best-prod-box .thumb { width: 100%; background-color: #fff; border: 1px solid #ccc; border-radius: 20px; margin-bottom: 1.5em; box-sizing: border-box; position: relative; overflow: hidden; } 
+.best-prod .best-prod-wrap .best-prod-box .thumb { width: 100%; background-color: #fff; border: 1px solid #ccc; border-radius: 10px; margin-bottom: 1.5em; box-sizing: border-box; position: relative; overflow: hidden; } 
 .best-prod .best-prod-wrap .best-prod-box .thumb .image img { margin: 0 auto; transition: all .5s; } 
 .best-prod .best-prod-wrap .best-prod-box .thumb:hover { border: 1px solid #ea5504; } 
 .best-prod .best-prod-wrap .best-prod-box .thumb:hover .image img { transform: scale(1.2); } 
+.best-prod .best-prod-wrap .best-prod-box .desc .price-area .discount { color: #ea5504;} 
+.best-prod .best-prod-wrap .best-prod-box .desc .price-area .discount .won { color: #ea5504;} 
+
+
+
 
 
 /*==================================================
  section02.쟈뎅추천테마
 ==================================================*/
 .recommend { margin-top: 70px; padding: 70px 0; background-color: #eee; } 
-.recommend .recommend-wrap { display: flex; background-color: #fff; border-radius: 50px; overflow: hidden; } 
+.recommend .recommend-wrap { display: flex; background-color: #fff; border-radius: 30px; overflow: hidden; } 
+.recommend .recommend-wrap .mob-recommend-tit {display: none;}
 .recommend .recommend-wrap .recommend-banner { width: 60%; } 
 .recommend .recommend-wrap .recommend-banner img { width: 100%; } 
+.recommend .recommend-wrap .mob-recommend-tit {display: none;}
 .recommend .recommend-wrap .recommend-box { width: 40%; } 
 .recommend .recommend-wrap .recommend-box .recommend-item { height: 33.33333%; display: flex; align-items: center; padding-left: 2em; border-bottom: 1px solid #ccc; } 
 .recommend .recommend-wrap .recommend-box .recommend-item:last-child { border: 0; } 
@@ -60,27 +67,28 @@ main .slide-view .slide-ctrl .pause-btn img { width: 100%; }
 .recommend .recommend-wrap .recommend-box .recommend-item .thumb img { width: 100%; } 
 .recommend .recommend-wrap .recommend-box .recommend-item .thumb:hover { border: 0; } 
 .recommend .recommend-wrap .recommend-box .recommend-item .desc .price-area .price { margin-top: 0.7em } 
-.recommend .recommend-wrap .recommend-box .recommend-item .desc .price-area .discount { font-size: 1.8rem; } 
-.recommend .recommend-wrap .recommend-box .recommend-item .desc .price-area .discount .won { font-size: 1rem; } 
+.recommend .recommend-wrap .recommend-box .recommend-item .desc .price-area .discount { font-size: 1.8rem; color: #ea5504;} 
+.recommend .recommend-wrap .recommend-box .recommend-item .desc .price-area .discount .won { font-size: 1rem; color: #ea5504;} 
 .recommend .recommend-wrap .recommend-box .recommend-item .desc .cart-btn { margin-top: 0.7em; } 
 
 
 /*==================================================
  section03.신제품 
 ==================================================*/
-.new-prod { width: 100%; margin-bottom: 70px; padding: 50px 0 0; background-image: url(../image/main_fixed_bg.jpeg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; } 
+.new-prod { width: 100%; margin-bottom: 70px; padding: 50px 0 0; background-image: url(../image/main_fixed_bg.jpeg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;} 
 .new-prod .new-bg { padding: 70px 0; background: url(../image/white_bg.png) repeat-x 0 10px/auto 100%; } 
 .new-prod .tit { color: #fff; margin-bottom: 1.5em; } 
 .new-prod .tit:before { content: ''; display: block; height: 2px; width: 50px; margin: 0 auto 0.5em; background-color: #fff; } 
-.new-prod a { border-radius: 30px; overflow: hidden; box-shadow: 0 0 20px #777; } 
+.new-prod .pc-banner { border-radius: 20px; overflow: hidden; box-shadow: 0 0 20px #777; } 
 .new-prod a img { width: 100%; } 
-
+.new-prod .mob-banner {display: none;}
 
 /*==================================================
  section04.카테고리
 ==================================================*/
-.category .category-container { width: 1200px; } 
+.category .category-container { width: 100%; } 
 /* 카테고리 탭메뉴 */
+.category .category-container .mob-tab-menu {display: none;}
 .category .category-container .tab-menu { height: 50px; display: flex; margin: 2em 0; } 
 .category .category-container .tab-menu li { width: 25%; height: 100%; border: 1px solid #ccc; border-right: 0; border-bottom: 1px solid #ea5504; background-color: #eee; text-align: center; line-height: 50px; } 
 .category .category-container .tab-menu li:last-child { border-right: 1px solid #ccc; } 
@@ -101,7 +109,7 @@ section05.이벤트와 리뷰
 .event-review .container {display: flex;}
 /* 이벤트 */
 .event-review .event {width: 45%; margin-right: 3%;}
-.event-review .event a {width: 100%; border-radius: 20px; overflow: hidden;}
+.event-review .event a {width: 100%; border-radius: 10px; overflow: hidden;}
 .event-review .event a img {width: 100%;}
 /* 리뷰 */
 .event-review .review {width: 52%;}
@@ -114,8 +122,6 @@ section05.이벤트와 리뷰
 .event-review .review .review-wrap .review-box .content .title {font-weight: 600; margin-bottom: 0.4em;}
 .event-review .review .review-wrap .review-box .content .txt {width: 100%; font-size: 0.9rem; margin-bottom: 1em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .event-review .review .review-wrap .review-box .writer {margin-left: auto; font-size: 0.9rem; color: #555;}
-
-
 
 
 
