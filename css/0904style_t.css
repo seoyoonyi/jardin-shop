@@ -37,12 +37,12 @@
 ==================================================*/
 .best-prod { margin-top: 70px; } 
 .best-prod .tit { display: flex; } 
-.best-prod .more { margin-left: auto; margin-top: 1em; font-size: 1rem; padding-right: 1em; background: url(../image/main_more.png) no-repeat right top; } 
+.best-prod .more { margin-left: auto;  font-size: 1rem; padding-right: 1em; background: url(../image/main_more.png) no-repeat right top; } 
 /* 베스트상품목록 */
 .best-prod .best-prod-wrap { display: flex; justify-content: space-between; } 
 .best-prod .best-prod-wrap .best-prod-box { width: 30%; } 
 .best-prod .best-prod-wrap .best-prod-box .thumb { width: 100%; background-color: #fff; border: 1px solid #ccc; border-radius: 10px; margin-bottom: 1.5em; box-sizing: border-box; position: relative; overflow: hidden; } 
-.best-prod .best-prod-wrap .best-prod-box .thumb .image img { margin: 0 auto; transition: all .5s; } 
+.best-prod .best-prod-wrap .best-prod-box .thumb .image img {width: 100%; margin: 0 auto; transition: all .5s; } 
 .best-prod .best-prod-wrap .best-prod-box .thumb:hover { border: 1px solid #ea5504; } 
 .best-prod .best-prod-wrap .best-prod-box .thumb:hover .image img { transform: scale(1.2); } 
 .best-prod .best-prod-wrap .best-prod-box .desc .price-area .discount { color: #ea5504;} 
@@ -97,8 +97,8 @@
 .category .category-container .tab-menu li.on { border: 1px solid #ea5504; border-bottom: 0; background-color: #fff; } 
 .category .category-container .tab-menu li.on a { color: #222 } 
 /* 카테고리박스 디자인 */
-.category-box { display: flex; flex-wrap: wrap; justify-content: space-between; } 
-.category-box .category-item { width: 23%; margin-bottom: 3em; } 
+.category-box { display: flex; flex-wrap: wrap; justify-content: space-between;  gap:15px;} 
+.category-box .category-item { width: calc(100% / 4 - 15px);}
 .category-box .category-item .thumb .image img { width: 100%; } 
 
 
@@ -117,9 +117,9 @@ section05.이벤트와 리뷰
 .event-review .review .review-wrap {border-top: 2px solid #222; padding-top: 1em;}
 .event-review .review .review-wrap .review-box {margin-bottom: 1em;}
 .event-review .review .review-wrap .review-box a {display: flex;}
-.event-review .review .review-wrap .review-box .photo {width: 90px; height: 90px; margin-right: 1em;}
+.event-review .review .review-wrap .review-box .photo {width: 90px; height: 90px; margin-right: 20px;}
 .event-review .review .review-wrap .review-box .photo img {width: 100%;}
-.event-review .review .review-wrap .review-box .content {width: 20vw;}
+.event-review .review .review-wrap .review-box .content {width: calc(100% - 220px);}
 .event-review .review .review-wrap .review-box .content .title {font-weight: 600; margin-bottom: 0.4em;}
 .event-review .review .review-wrap .review-box .content .txt {width: 100%; font-size: 0.9rem; margin-bottom: 1em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .event-review .review .review-wrap .review-box .writer {margin-left: auto; font-size: 0.9rem; color: #555;}
@@ -127,3 +127,40 @@ section05.이벤트와 리뷰
 
 
 
+/*==================================================
+    반응형
+==================================================*/
+@media (max-width:1000px) {
+    .category-box .category-item {
+        width: calc(100% / 3 - 15px);
+    }
+    .recommend .recommend-wrap {flex-wrap: wrap;}
+    .recommend .recommend-wrap .recommend-banner {width: 100%; margin-bottom: 10px;}
+    .recommend .recommend-wrap .recommend-box {width: 100%;}
+
+    .event-review .container {flex-wrap: wrap;}
+    .event-review .event {width: 100%; margin-bottom: 40px;}
+    .event-review .review {width: 100%;}
+}
+@media (max-width:768px) {
+    .category-box .category-item {
+        width: calc(100% / 2 - 15px);
+    }
+    .best-prod .best-prod-wrap .best-prod-box .desc .price-area .discount {font-size:16px;}
+    .category .category-container .tab-menu li a {font-size:14px;}
+}
+@media (max-width:490px) {
+    .best-prod .best-prod-wrap {flex-wrap: wrap;}
+    .best-prod .best-prod-wrap .best-prod-box {width: 100%;}
+}
+@media (max-width:480px) {
+    .category-box .category-item {
+        width: 100%;
+    } 
+    .category .category-container .tab-menu {overflow-x: auto;}
+    .category .category-container .tab-menu li {width:auto; min-width:100px; }
+    .recommend .recommend-wrap .recommend-box .recommend-item {padding:14px 10px;}
+    .recommend .recommend-wrap .recommend-box .recommend-item .thumb {width:80px; height: 80px; margin-right:20px;}
+    .recommend .recommend-wrap .recommend-box .recommend-item .desc .price-area .discount {font-size:16px;}
+    .recommend .recommend-wrap .recommend-box .recommend-item .desc .price-area .price {margin:0 0 0 4px;}
+}
