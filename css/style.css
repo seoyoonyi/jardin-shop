@@ -1,0 +1,38 @@
+@charset "utf-8"; 
+
+
+/* section01.슬라이드 */
+/* 슬라이드 박스 */
+.slide-wrap {width: 100%;} 
+.slide-wrap .slide-view {width: 100%; overflow: hidden; position: relative;}
+.slide-wrap .slide-view .slide-group {width:400%; display: flex;}
+.slide-wrap .slide-view .slide-group .slide-box {width: 25%;}
+.slide-wrap .slide-view .slide-group .slide-box a img {width: 100%; object-fit: contain; }
+
+/* 슬라이드 방향키 */
+.slide-wrap .slide-view .slide-direction-group {width: 1380px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background-color: tomato;}
+.slide-wrap .slide-view .slide-direction-group .slide-btn { padding: 0; background-color: transparent; position: absolute; top: 0; }
+.slide-wrap .slide-view .slide-direction-group .slide-btn.prev {left: 0;}
+.slide-wrap .slide-view .slide-direction-group .slide-btn.next {right: 0;}
+
+/* 슬라이드 컨트롤 - 페이저 */
+.slide-wrap .slide-view .slide-ctrl-group { display: flex; position: absolute; bottom: 35px; left:50%; transform: translateX(-50%); } 
+.slide-wrap .slide-view .slide-ctrl-group .pager {display: flex; align-items: center; } 
+.slide-wrap .slide-view .slide-ctrl-group .pager a { width: 12px; height: 12px; margin: 0 6px; background-color: #c0c0c0; border-radius: 50%; overflow: hidden; } 
+.slide-wrap .slide-view .slide-ctrl-group .pager a span{width: 1px; height: 1px; position: relative; top:-50px; left: 0px; } 
+.slide-wrap .slide-view .slide-ctrl-group .pause-btn { width: 30px; height: 30px; } 
+.slide-wrap .slide-view .slide-ctrl-group .pause-btn { width: 100%; } 
+
+
+
+
+
+/* section02. 베스트상품 */
+.best-prod-wrap .tit {width: 100%; padding: 30px 0 20px; display: flex; align-items: center; font-size: 2rem; font-weight: bold;}
+.best-prod-wrap .tit .more-btn {margin-left: auto; padding-right: 15px; font-size: 1.125rem; font-weight: 300; background: url(../image/main_more.png) no-repeat right center;}
+.best-prod-wrap .best-prod-group {width: 100%; display: flex; justify-content: space-between;}
+.best-prod-wrap .best-prod-group .best-prod-box {width: 370px; }
+
+
+
+

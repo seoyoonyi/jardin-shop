@@ -17,7 +17,7 @@
  .pc-slide .slide-view .slide-wrap li a img { width: 100%; object-position: center; object-fit: cover; } 
  .pc-slide .slide-view .slide-wrap li:nth-child(1), .pc-slide .slide-view .slide-wrap li:nth-child(2) { display: none; } 
 /* 슬라이드 방향키 */
- .pc-slide .slide-view .slide-direction {width: 1200px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); } 
+ .pc-slide .slide-view .slide-direction {max-width: 1400px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); } 
  .pc-slide .slide-view .slide-direction a { position: absolute; top: 50%; } 
  .pc-slide .slide-view .slide-direction .btn-prev { left: 0; } 
  .pc-slide .slide-view .slide-direction .btn-next { right: 0; } 
